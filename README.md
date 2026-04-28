@@ -78,6 +78,3 @@ This project is a beginner-friendly AI chatbot built using Android (Java + XML) 
 
 ---
 
-## 📄 License
-
-This project is open-source and free to use for learning purposes.
