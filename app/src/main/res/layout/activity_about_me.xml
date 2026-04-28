@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AboutMe">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/aboutme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Hi i am Android developer"
+            android:gravity="center|start"
+            android:padding="5dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/bottomNavigationBarAtt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_nav_background"
+            android:elevation="2dp"
+            android:layout_marginTop="40dp"
+            app:cnb_unselectedColor="@color/white"
+            app:cnb_menuResource="@menu/bottom_navigation_menu"
+            app:itemTextAppearance="@style/RobotoTextViewStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutme"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
